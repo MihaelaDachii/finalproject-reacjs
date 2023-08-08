@@ -3,6 +3,9 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Trip from "../components/Trip";
+import SearchBar from "../components/SearchBar";
+
+
 
 function Home() {
   return (
@@ -17,6 +20,7 @@ function Home() {
       url="/"
       btnClass="show"
      />
+     <SearchBar/>
      <Destination/>
      <Trip/>
      <Footer/>
