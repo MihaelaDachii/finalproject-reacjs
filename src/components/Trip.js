@@ -1,6 +1,6 @@
 import "./TripStyles.css";
 import TripData from "./TripData";
-import Trip1 from "../assets/16.jpg";
+import Trip1 from "../assets/image16.jpg";
 import Trip2 from "../assets/17.jpg";
 import Trip3 from "../assets/18.jpg";
 

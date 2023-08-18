@@ -5,6 +5,8 @@ import About from "./routes/About";
 import Service from "./routes/Service";
 import Contact from "./routes/Contact";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 export default function App() {
   return (
@@ -17,6 +19,9 @@ export default function App() {
       </Routes>
 
         <Navbar/>
+        <ScrollToTop/>
+        
+        
         
     </div>
   );

@@ -1,159 +1,248 @@
-import Picture1 from "../assets/4.jpg";
-import Picture3 from "../assets/6.jpg";
-import Picture5 from "../assets/8.jpg";
-import Picture7 from "../assets/10.jpg";
-import Picture9 from "../assets/12.jpg";
-import Picture10 from "../assets/13.jpg";
-import Picture11 from "../assets/14.jpg";
-import Picture12 from "../assets/15.jpg";
-import Picture13 from "../assets/20.jpg";
-import Picture14 from "../assets/21.jpg";
-import Picture15 from "../assets/22.jpg";
-import Picture16 from "../assets/23.jpg";
-import Picture17 from "../assets/24.jpg";
-import Picture18 from "../assets/25.jpg";
-import Picture19 from "../assets/26.jpg";
-import Picture20 from "../assets/27.jpg";
-import Picture21 from "../assets/28.jpg";
-import Picture22 from "../assets/29.jpg";
-import Picture23 from "../assets/30.jpg";
-import Picture24 from "../assets/31.jpg";
-import Picture25 from "../assets/32.jpg";
-import Picture26 from "../assets/33.jpg";
+import React, { useState } from "react";
+import styled from "styled-components";
+import image4 from "../assets/image4.jpg";
+import image8 from "../assets/image8.jpg";
+import image12 from "../assets/image12.jpg";
+import image14 from "../assets/image14.jpg";
+import image16 from "../assets/image16.jpg";
+import image21 from "../assets/image21.jpg";
+import image22 from "../assets/image22.jpg";
+import image25 from "../assets/image25.jpg";
+import image26 from "../assets/image26.jpg";
+import image29 from "../assets/image29.jpg";
+import image30 from "../assets/image30.jpg";
+import image32 from "../assets/image32.jpg";
+import info1 from "../assets/info1.png"
+import info2 from "../assets/info2.png"
+import info3 from "../assets/info3.png"
 
+export default function DestinationService() {
+  const data = [
+    {
+      image: image4,
+      title: "Barcelona, Spain",
+      subTitle: "The Sagrada Família, located in the heart of Barcelona, Spain.",
+      cost: "8,800",
+      duration: "Approx 2 night trip",
+    },
+    {
+      image: image8,
+      title: "Saint Petersburg, Russia",
+      subTitle: "Saint Isaac's Cathedral, located in the heart of Saint Petersburg, Russia.",
+      cost: "4,200",
+      duration: "Approx 2 night trip",
+    },
+    {
+      image: image12,
+      title: "Zakynthos, Greece",
+      subTitle: "Navagio Beach, also known as Shipwreck Beach, is a world-famous destination located on the Greek island.",
+      cost: "5,500",
+      duration: "Approx 2 night trip",
+    },
+    {
+      image: image14,
+      title: "London, UK",
+      subTitle: "The London Eye, also known as the Millennium Wheel, is an iconic landmark.",
+      cost: "24,100",
+      duration: "Approx 1 night trip",
+    },
+    {
+      image: image16,
+      title: "Switzerland",
+      subTitle: "Switzerland, renowned for its majestic Alps, pristine lakes, and charming villages.",
+      cost: "5,400",
+      duration: "Approx 2 night 2 day trip",
+    },
+    {
+      image: image22,
+      title: "Phuket, Thailanda",
+      subTitle: "London, the capital of England and the United",
+      cost: "8,800",
+      duration: "Approx 3 night 2 day trip",
+    },
+    {
+      image: image25,
+      title: "Vienna, Austria",
+      subTitle: "Vienna, the capital city of Austria, is a captivating blend of historical grandeur.",
+      cost: "8,800",
+      duration: "Approx 2 night trip",
+    },
+    {
+      image: image26,
+      title: "Paris, France",
+      subTitle: "Paris is a mecca for art and culture.",
+      cost: "4,200",
+      duration: "Approx 2 night trip",
+    },
+    {
+      image: image29,
+      title: "Rome, Italy",
+      subTitle: "Rome, the Eternal City, stands as a living testament to the grandeur of ancient civilizations.",
+      cost: "5,500",
+      duration: "Approx 2 night trip",
+    },
+    {
+      image: image30,
+      title: "Rovinj, Croatia",
+      subTitle: "Rovinj, a picturesque coastal town nestled on the Istrian Peninsula of Croatia",
+      cost: "4,100",
+      duration: "Approx 1 night trip",
+    },
+    {
+      image: image32,
+      title: "Brasov, Romania",
+      subTitle: "Nestled in the heart of the Carpathian Mountains, Brasov is a captivating Romanian city.",
+      cost: "4,100",
+      duration: "Approx 1 night trip",
+    },
+    {
+      image: image21,
+      title: "Pamukkale, Turkey",
+      subTitle: "Pamukkale's surreal landscape is a result of millennia of mineral-rich thermal waters.",
+      cost: "8,800",
+      duration: "Approx 2 night trip",
+    },
+  ];
 
-import DestinationData from "./DestinationData";
-import "./DestinationService.css";
+  const packages = [
+    "The Weekend Break",
+    "The Package Holiday",
+    "The Group Tour",
+    "Long Term Slow Travel",
+  ];
 
-const DestinationService = () => {
+  const [active, setActive] = useState(1);
   return (
-    <div className="destination">
-      <h1>Our Destinations</h1>
-      <p>Explore trending destinations for your next adventure.</p>
-
-
-      <DestinationData
-      className="first-des"
-      heading="Pamukkale, Turkey"
-
-      text="Pamukkale's surreal landscape is a result of millennia of mineral-rich thermal waters flowing down the hillsides, leaving behind a series of cascading, snow-white terraces. These terraces, formed from the calcium deposits left by the flowing water, create a one-of-a-kind spectacle that seems almost otherworldly. Visitors are not only treated to a visual feast of dazzling white pools, but they can also experience the soothing embrace of the warm, mineral-rich waters – a therapeutic gift from the Earth itself."
-      img1={Picture13}
-      img2={Picture14}
-      />
-
-      <DestinationData
-      className="first-des-reverse"
-      heading="Phuket, Thailanda"
-
-      text="Phuket, the largest island in Thailand, is a tropical paradise that beckons travelers with its stunning landscapes, vibrant culture, and endless array of activities. Located in the Andaman Sea, Phuket is a magnet for those seeking a blend of relaxation, adventure, and exploration.With its pristine beaches, crystal-clear waters, and lush greenery, Phuket boasts some of the most breathtaking coastal scenery in the world. White-sand beaches like Patong, Kata, and Karon offer idyllic settings for sunbathing, swimming, and water sports. The azure waters teem with marine life, making snorkeling and diving experiences unforgettable."
-      img1={Picture15}
-      img2={Picture16}
-      /> 
-      
-      <DestinationData
-      className="first-des"
-      heading="Barcelona, Spain"
-
-      text="The Sagrada Família, located in the heart of Barcelona, Spain, is an architectural marvel and a symbol of both modernist and Gothic styles. Designed by the renowned architect Antoni Gaudí, this unfinished basilica has been under construction since 1882 and continues to captivate visitors with its breathtaking facades and intricate details. With its soaring spires, colorful mosaics, and stunning interiors, the Sagrada Família stands as a testament to Gaudí's visionary genius and remains a must-visit landmark that draws millions of tourists from around the world each year."
-      img1={Picture1}
-      img2={Picture3}
-      />
-
-
-      <DestinationData
-      className="first-des-reverse"
-      heading="Vienna, Austria"
-
-      text="Vienna, the capital city of Austria, is a captivating blend of historical grandeur, artistic excellence, and modern sophistication. Nestled along the banks of the Danube River, Vienna's rich cultural heritage and architectural marvels have earned it a place as one of Europe's most enchanting and influential cities.
-
-      The city's imperial past is evident in its stunning architecture and grand palaces. The Schönbrunn Palace, a UNESCO World Heritage Site, stands as a testament to the opulence of the Habsburg dynasty. Its lavish gardens, intricate interiors, and the Gloriette perched on a hill offer a glimpse into a bygone era. The Hofburg Imperial Palace, another iconic landmark, houses museums, the Spanish Riding School, and the historic heart of the city."
-      img1={Picture17}
-      img2={Picture18}
-      /> 
-
-
-
-      <DestinationData
-      className="first-des"
-      heading="Saint Petersburg, Russia"
-
-      text="Saint Isaac's Cathedral, located in the heart of Saint Petersburg, Russia, is a magnificent architectural masterpiece and an iconic symbol of the city. Designed by the French architect Auguste de Montferrand, the cathedral's construction began in 1818 and was completed in 1858. With its stunning Neoclassical and Byzantine architecture, the cathedral stands as a grand testament to the glory of the Russian Empire. Its massive golden dome, adorned with intricate sculptures and gilded details, dominates the city's skyline and is visible from afar."
-      img1={Picture5}
-      img2={Picture7}
-      />
-
-        
-
-      <DestinationData
-      className="first-des-reverse"
-      heading="Paris, France"
-
-      text="Paris is a mecca for art and culture. The Louvre, one of the world's most renowned museums, houses an unparalleled collection of masterpieces, including the enigmatic Mona Lisa. The Musée d'Orsay showcases an impressive array of Impressionist and Post-Impressionist art, while the Centre Pompidou is a hub of modern and contemporary creativity.
-
-      Cafés line the streets, offering the perfect setting to indulge in a leisurely cup of coffee and people-watch. Parisian cuisine is a delight for the senses, from buttery croissants and flaky pastries to exquisite French cuisine served in cozy bistros and Michelin-starred restaurants."
-      img1={Picture19}
-      img2={Picture20}
-      /> 
-
-
-
-     <DestinationData
-     className="first-des"
-     heading="Zakynthos, Greece"
-
-      text="Navagio Beach, also known as Shipwreck Beach, is a world-famous destination located on the Greek island of Zakynthos. This stunning cove is renowned for its crystal-clear turquoise waters, fine golden sand, and the dramatic wreckage of a smuggler's ship that rests on the shore.
-      The Blue Caves, situated on the northern coast of Zakynthos, Greece, are a mesmerizing natural wonder that captivates visitors with their stunning blue-hued waters and unique rock formations. These enchanting sea caves are accessible only by boat, offering an unforgettable journey through the sparkling waters of the Ionian Sea."
-      
-      img1={Picture9}
-      img2={Picture10}
-      />
-
-     <DestinationData
-     className="first-des-reverse"
-     heading="London, UK."
-
-      text="The London Eye, also known as the Millennium Wheel, is an iconic landmark situated on the South Bank of the River Thames in London, England. Standing tall at 135 meters (443 feet), it is one of the world's largest observation wheels and has become a symbol of the city's skyline.
-      Today, the London Bridge stands as an essential part of the city's infrastructure, connecting the bustling financial district of the City of London with the vibrant Southwark area. It not only facilitates vehicular and pedestrian traffic but also offers picturesque views of the River Thames and the surrounding landmarks."
-      
-      img1={Picture11}
-      img2={Picture12}
-      />
-
-     <DestinationData
-     className="first-des"
-     heading="Rome, Italy"
-
-      text=" Rome, the Eternal City, stands as a living testament to the grandeur of ancient civilizations, a hub of cultural richness, and a center of religious significance. With its captivating history, architectural marvels, and vibrant modern life, Rome is a destination that continues to awe and inspire travelers from around the globe. At the heart of the city lies the iconic Colosseum  an ancient amphitheater that once hosted gladiatorial contests and grand spectacles. "
-      
-      img1={Picture21}
-      img2={Picture22}
-      />
-
-    <DestinationData
-     className="first-des-reverse"
-     heading="Rovinj, Croatia"
-
-      text=" 
-      Rovinj, a picturesque coastal town nestled on the Istrian Peninsula of Croatia, exudes an irresistible charm that combines historical elegance with natural beauty. With its cobbled streets, vibrant harbor, and Mediterranean atmosphere, Rovinj is a hidden gem that captivates visitors with its unique character.The town's most distinctive feature is its old town, perched on a small peninsula that juts into the Adriatic Sea. The charming streets are a labyrinth of narrow alleys and colorful houses, reminiscent of an artist's palette."
-      
-      img1={Picture23}
-      img2={Picture24}
-      />
-
-     <DestinationData
-     className="first-des"
-     heading="Brasov, Romania"
-
-      text="Nestled in the heart of the Carpathian Mountains, Brasov is a captivating Romanian city that effortlessly weaves together history, culture, and natural beauty. With its medieval charm, stunning landscapes, and rich heritage, Brasov offers a unique and enchanting experience for travelers.
-
-      The city's historic center is a fairy-tale scene of cobblestone streets, colorful houses, and well-preserved fortifications. The imposing Black Church, a Gothic masterpiece, dominates the skyline and houses a vast collection of historic artifacts. The Council Square (Piata Sfatului) is a bustling hub where locals and visitors gather, surrounded by charming cafes, shops, and historic buildings. "
-      
-      img1={Picture25}
-      img2={Picture26}
-      />
-
-    </div>
+    <Section id="DestinationService">
+      <div className="title">
+        <h2>Our Destinations</h2>
+      </div>
+      <div className="packages">
+        <ul>
+          {packages.map((pkg, index) => {
+            return (
+              <li
+                className={active === index + 1 ? "active" : ""}
+                onClick={() => setActive(index + 1)}
+              >
+                {pkg}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+      <div className="destinations">
+        {data.map((destination) => {
+          return (
+            <div className="destination">
+              <img src={destination.image} alt="" />
+              <h3>{destination.title}</h3>
+              <p>{destination.subTitle}</p>
+              <div className="info">
+                <div className="services">
+                  <img src={info1} alt="" />
+                  <img src={info2} alt="" />
+                  <img src={info3} alt="" />
+                </div>
+                <h4>{destination.cost}</h4>
+              </div>
+              <div className="distance">
+               
+                <span>{destination.duration}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </Section>
   );
-};
+}
 
-export default DestinationService;
+const Section = styled.section`
+  padding: 2rem 0;
+  .title {
+    text-align: center;
+  }
+  .packages {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    ul {
+      display: flex;
+      list-style-type: none;
+      width: max-content;
+      li {
+        padding: 1rem 2rem;
+        border-bottom: 0.1rem solid black;
+      }
+      .active {
+        border-bottom: 0.5rem solid #8338ec;
+      }
+    }
+  }
+  .destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 0;
+    
+    .destination {
+  padding: 1rem;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #8338ec14;
+  border-radius: 1rem;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    transform: translateX(0.4rem) translateY(-1rem);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  img {
+    width: 100%;
+    max-width: 100%; 
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    .services {
+      display: flex;
+      gap: 0.3rem;
+      img {
+        border-radius: 1rem;
+        background-color: #4d2ddb84;
+        width: 2rem;
+        padding: 0.3rem 0.4rem;
+      }
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+  .distance {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+  }
+  @media screen and (min-width: 280px) and (max-width: 768px) {
+    .packages {
+      ul {
+        li {
+          padding: 0 0.5rem;
+          font-size: 2vh;
+          padding-bottom: 1rem;
+        }
+        .active {
+          border-bottom-width: 0.3rem;
+        }
+      }
+    }
+    .destinations {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+  }
+`;

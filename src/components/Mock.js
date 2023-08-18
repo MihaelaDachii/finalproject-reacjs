@@ -15,6 +15,22 @@ const mockData = {
           }
         ]
       },
+
+      zakynthos: {
+        attractions: [
+          {
+            name: "Navagio ",
+            description: "Navagio, also known as Shipwreck Beach, is a famous and stunning location situated on the Greek island of Zakynthos (Zante).",
+            address: "Navagio Beach Zakynthos, Greece",
+            image_url: "https://images.unsplash.com/photo-1570015329194-675ae0cf2516?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+            thumbnail_urls: [
+              "https://images.unsplash.com/photo-1560235043-5ca64ce84fdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+            ],
+            visiting_hours: "10:00 AM - 6:00 PM, Tuesday - Sunday"
+          }
+        ]
+      },
+
       barcelona: {
         attractions: [
           {
@@ -57,20 +73,7 @@ const mockData = {
           }
         ]
       },
-      new_york: {
-        attractions: [
-          {
-            name: "Statue of Liberty",
-            description: "Iconic symbol of freedom and democracy located in New York, USA.",
-            address: "Liberty Island, New York, NY 10004, USA",
-            image_url: "https://images.unsplash.com/photo-1585155967849-91c736589c84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=327&q=80",
-            thumbnail_urls: [
-              "https://images.unsplash.com/photo-1585155967849-91c736589c84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
-            ],
-            visiting_hours: "9:30 AM - 5:00 PM, Monday - Sunday"
-          }
-        ]
-      },
+     
       sydney: {
         attractions: [
           {
@@ -85,20 +88,7 @@ const mockData = {
           }
         ]
       },
-      washington_dc: {
-        attractions: [
-          {
-            name: "The White House",
-            description: "Official residence and workplace of the President of the United States.",
-            address: "1600 Pennsylvania Avenue NW, Washington, D.C., USA",
-            image_url: "https://images.unsplash.com/photo-1593047614267-378b863c98c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=867&q=80",
-            thumbnail_urls: [
-              "https://images.unsplash.com/photo-1593047614267-378b863c98c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
-            ],
-            visiting_hours: "8:30 AM - 11:00 AM, Tuesday - Saturday"
-          }
-        ]
-      },
+    
       bali: {
         attractions: [
           {
@@ -113,20 +103,7 @@ const mockData = {
           }
         ]
       },
-      hong_kong: {
-        attractions: [
-          {
-            name: "Victoria Peak",
-            description: "Scenic viewpoint and popular tourist spot in Hong Kong.",
-            address: "1 Lugard Road, Hong Kong",
-            image_url: "https://images.unsplash.com/photo-1533029030467-904d7bbd602b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80",
-            thumbnail_urls: [
-              "https://images.unsplash.com/photo-1533029030467-904d7bbd602b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
-            ],
-            visiting_hours: "7:00 AM - 12:00 AM, Monday - Sunday"
-          }
-        ]
-      },
+    
       budapest: {
         attractions: [
           {
@@ -141,20 +118,7 @@ const mockData = {
           }
         ]
       },
-      san_francisco: {
-        attractions: [
-          {
-            name: "Golden Gate Bridge",
-            description: "Iconic suspension bridge spanning the Golden Gate Strait in San Francisco, California.",
-            address: "Golden Gate Bridge, San Francisco, CA, USA",
-            image_url: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
-            thumbnail_urls: [
-              "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
-            ],
-            visiting_hours: "Open 24 hours"
-          }
-        ]
-      },
+      
       florence: {
         attractions: [
           {
@@ -169,20 +133,7 @@ const mockData = {
           }
         ]
       },
-      bora_bora: {
-        attractions: [
-          {
-            name: "Matira Beach",
-            description: "Pristine beach with clear turquoise waters on the island of Bora Bora, French Polynesia.",
-            address: "Bora Bora, French Polynesia",
-            image_url: "https://images.unsplash.com/photo-1509233725247-49e657c54213?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=449&q=80",
-            thumbnail_urls: [
-              "https://images.unsplash.com/photo-1509233725247-49e657c54213?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
-            ],
-            visiting_hours: "Open 24 hours"
-          }
-        ]
-      },
+    
       tokyo: {
         attractions: [
           {
@@ -197,20 +148,7 @@ const mockData = {
           }
         ]
       },
-      rio_de_janeiro: {
-        attractions: [
-          {
-            name: "Christ the Redeemer",
-            description: "Iconic statue of Jesus Christ overlooking Rio de Janeiro, Brazil.",
-            address: "Parque Nacional da Tijuca, Rio de Janeiro - RJ, Brazil",
-            image_url: "https://images.unsplash.com/photo-1593995863951-57c27e518295?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
-            thumbnail_urls: [
-              "https://images.unsplash.com/photo-1593995863951-57c27e518295?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
-            ],
-            visiting_hours: "8:00 AM - 7:00 PM, Monday - Sunday"
-          }
-        ]
-      },
+      
       cairo: {
         attractions: [
           {

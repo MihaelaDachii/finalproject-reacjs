@@ -3,9 +3,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import Trip from "../components/Trip";
-import SearchBar from "../components/SearchBar";
-
-
+import Testimonials from "../components/Testimonials";
 
 function Home() {
   return (
@@ -20,9 +18,11 @@ function Home() {
       url="/"
       btnClass="show"
      />
-     <SearchBar/>
+    
      <Destination/>
      <Trip/>
+
+     <Testimonials/>
      <Footer/>
     </>
   );

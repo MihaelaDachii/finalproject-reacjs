@@ -1,10 +1,10 @@
-import Picture1 from "../assets/4.jpg";
+import Picture1 from "../assets/image4.jpg";
 import Picture3 from "../assets/6.jpg";
 import Picture7 from "../assets/10.jpg";
 import Picture8 from "../assets/11.jpg";
-import Picture9 from "../assets/12.jpg";
+import Picture9 from "../assets/image12.jpg";
 import Picture10 from "../assets/13.jpg";
-import Picture11 from "../assets/14.jpg";
+import Picture11 from "../assets/image14.jpg";
 import Picture12 from "../assets/15.jpg";
 
 import DestinationData from "./DestinationData";
