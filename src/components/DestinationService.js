@@ -194,7 +194,6 @@ export default function DestinationService() {
     "The Weekend Break",
     "The Package Holiday",
     "The Group Tour",
-    "Long Term Slow Travel",
   ];
 
   const [active, setActive] = useState(1);
@@ -259,10 +258,10 @@ const Section = styled.section`
       width: max-content;
       li {
         padding: 1rem 2rem;
-        border-bottom: 0.1rem solid black;
+        
       }
       .active {
-        border-bottom: 0.5rem solid #8338ec;
+        border-bottom: 0.5rem solid white;
       }
     }
   }
