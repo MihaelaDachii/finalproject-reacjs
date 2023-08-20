@@ -16,6 +16,116 @@ const mockData = {
         ]
       },
 
+
+      london: {
+        attractions: [
+            {
+                name: "The British Museum",
+                description: "The British Museum is one of the world's oldest and most renowned museums, housing a vast collection of art and artifacts from various civilizations across history.",
+                address: "Great Russell Street, London WC1B 3DG, United Kingdom",
+                image_url: "https://images.unsplash.com/photo-1574515529318-b3a2cd51242e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+                thumbnail_urls: [
+                    "https://images.unsplash.com/photo-1568630581081-20a44a0be927?ixid=MnwxM‌​jA3fDB8MHxwaG90by1wYW‌​dlfHx8fGVufDB8‌​fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                ],
+                visiting_hours: "10:00 AM - 5:30 PM, Sunday - Saturday"
+            }
+        ]
+    },
+
+
+    moscow: {
+      attractions: [
+          {
+              name: "Red Square",
+              description: "Red Square is a historic city square in Moscow, Russia. It is known for its cultural and political significance, featuring iconic landmarks such as the Kremlin and St. Basil's Cathedral.",
+              address: "Red Square, Moscow, Russia",
+              image_url: "https://images.unsplash.com/photo-1544987185-101082cca5de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
+              thumbnail_urls: [
+                  "https://images.unsplash.com/photo-1565151258-cd6ae9343954?ixid=MnwxMjA3fDB8MHx‌​waG90by1wYWdlfHx8fGVufDB8‌​fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+              ],
+              visiting_hours: "9:00 AM - 8:00 PM, Monday - Sunday"
+          }
+      ]
+  },
+
+  switzerland: {
+    attractions: [
+        {
+            name: "Matterhorn",
+            description: "The Matterhorn is one of the most iconic mountains in the Swiss Alps, known for its distinctive pyramid shape and challenging climbing routes.",
+            address: "Matterhorn, Switzerland",
+            image_url: "https://images.unsplash.com/photo-1535224206242-487f7090b5bb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+            thumbnail_urls: [
+                "https://images.unsplash.com/photo-1534809027761-6f8de9b61574?ixid=MnwxM‌​jA3fDB8MHxwaG90by1wYW‌​dlfHx8fGVufDB8‌​fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+            ],
+            visiting_hours: "Open 24 hours"
+        }
+    ]
+},
+
+vienna: {
+  attractions: [
+      {
+          name: "Schönbrunn Palace",
+          description: "Schönbrunn Palace is a historic imperial palace in Vienna, Austria. It is known for its stunning architecture, beautiful gardens, and rich history.",
+          address: "Schönbrunn Palace, Schönbrunner Schloßstraße 47, 1130 Wien, Austria",
+          image_url: "https://images.unsplash.com/photo-1625316059055-0e2136aa400a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+          thumbnail_urls: [
+              "https://images.unsplash.com/photo-1559754033-aa2b6602b6b1?ixid=MnwxM‌​jA3fDB8MHxwaG90by1wYW‌​dlfHx8fGVufDB8‌​fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+          ],
+          visiting_hours: "9:30 AM - 5:30 PM, Monday - Sunday"
+      }
+  ]
+},
+
+
+paris: {
+  attractions: [
+      {
+          name: "Eiffel Tower",
+          description: "The Eiffel Tower is an iconic landmark and symbol of Paris, France. It offers stunning views of the city and is a must-visit attraction for tourists.",
+          address: "Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France",
+          image_url: "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=801&q=80",
+          thumbnail_urls: [
+              "https://images.unsplash.com/photo-1531616918980-1988a23e8fb7?ixid=MnwxM‌​jA3fDB8MHxwaG90by1wYW‌​dlfHx8fGVufDB8‌​fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+          ],
+          visiting_hours: "9:00 AM - 11:45 PM, Monday - Sunday"
+      }
+  ]
+},
+
+
+
+rome: {
+  attractions: [
+      {
+          name: "Colosseum",
+          description: "The Colosseum is an ancient amphitheater in the center of Rome, Italy. It is a remarkable symbol of Roman engineering and entertainment.",
+          address: "Piazza del Colosseo, 1, 00184 Roma RM, Italy",
+          image_url: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=796&q=80",
+          thumbnail_urls: [
+              "https://images.unsplash.com/photo-1502517705005-0ce53ed58497?ixid=MnwxM‌​jA3fDB8MHxwaG90by1wYW‌​dlfHx8fGVufDB8‌​fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+          ],
+          visiting_hours: "8:30 AM - 6:15 PM, Monday - Sunday"
+      }
+  ]
+},
+
+rovinj: {
+  attractions: [
+      {
+          name: "Old Town Rovinj",
+          description: "The Old Town of Rovinj is a charming and picturesque area with narrow streets, colorful houses, and stunning sea views. It captures the essence of the Croatian coastal town.",
+          address: "Old Town, Rovinj, Croatia",
+          image_url: "https://plus.unsplash.com/premium_photo-1661930620683-bc15c7a459ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+          thumbnail_urls: [
+              "https://images.unsplash.com/photo-1556155100-ef083782db37?ixid=MnwxM‌​jA3fDB8MHxwaG90by1wYW‌​dlfHx8fGVufDB8‌​fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+          ],
+          visiting_hours: "Open 24 hours"
+      }
+  ]
+},
+
       zakynthos: {
         attractions: [
           {

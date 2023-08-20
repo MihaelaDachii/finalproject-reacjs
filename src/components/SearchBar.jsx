@@ -7,15 +7,26 @@ import LocationDetails from "./LocationDetails";
 export default function Hero() {
   const [searchInput, setSearchInput] = useState("");
   const [selectedLocation, setSelectedLocation] = useState(null);
+  const [locationNotFound, setLocationNotFound] = useState(false);
 
   const handleSearchChange = (event) => {
     setSearchInput(event.target.value);
+    setLocationNotFound(false); // Resetarea mesajului de locație inexistentă
   };
 
   const handleSearchSubmit = (event) => {
     event.preventDefault();
-    setSelectedLocation(mockData.data[searchInput.toLowerCase()]);
-    setSearchInput("");
+    const locationName = searchInput.toLowerCase();
+    const selectedLocationData = mockData.data[locationName];
+
+    if (selectedLocationData) {
+      setSelectedLocation(selectedLocationData);
+      setSearchInput("");
+    } else {
+      setSelectedLocation(null);
+      setSearchInput("");
+      setLocationNotFound(true); // Setarea mesajului de locație inexistentă
+    }
   };
 
   return (
@@ -26,7 +37,6 @@ export default function Hero() {
       <div className="content">
         <div className="title">
           <h1>TRAVEL TO EXPLORE</h1>
-         
         </div>
         <div className="search">
           <SearchForm onSubmit={handleSearchSubmit}>
@@ -38,12 +48,17 @@ export default function Hero() {
             />
             <button type="submit">Search</button>
           </SearchForm>
-          {selectedLocation && <LocationDetails location={selectedLocation} />}
+          {locationNotFound ? (
+            <p>Location not found</p>
+          ) : (
+            selectedLocation && <LocationDetails location={selectedLocation} />
+          )}
         </div>
       </div>
     </Section>
   );
 }
+
 
 const Section = styled.section`
   position: relative;
