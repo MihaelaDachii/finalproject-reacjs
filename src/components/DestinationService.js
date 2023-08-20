@@ -12,6 +12,15 @@ import image26 from "../assets/image26.jpg";
 import image29 from "../assets/image29.jpg";
 import image30 from "../assets/image30.jpg";
 import image32 from "../assets/image32.jpg";
+import image33 from "../assets/image33.jpg";
+import image34 from "../assets/image34.jpg";
+import image35 from "../assets/image35.jpg";
+import image36 from "../assets/image36.jpg";
+import image37 from "../assets/image37.jpg";
+import image38 from "../assets/image38.jpg";
+import image39 from "../assets/image39.jpg";
+import image40 from "../assets/image40.jpg";
+import image41 from "../assets/image41.jpg";
 import info1 from "../assets/info1.png"
 import info2 from "../assets/info2.png"
 import info3 from "../assets/info3.png"
@@ -25,13 +34,7 @@ export default function DestinationService() {
       cost: "8,800",
       duration: "Approx 2 night trip",
     },
-    {
-      image: image8,
-      title: "Saint Petersburg, Russia",
-      subTitle: "Saint Isaac's Cathedral, located in the heart of Saint Petersburg, Russia.",
-      cost: "4,200",
-      duration: "Approx 2 night trip",
-    },
+   
     {
       image: image12,
       title: "Zakynthos, Greece",
@@ -43,12 +46,12 @@ export default function DestinationService() {
       image: image14,
       title: "London, UK",
       subTitle: "The London Eye, also known as the Millennium Wheel, is an iconic landmark.",
-      cost: "24,100",
+      cost: "4,100",
       duration: "Approx 1 night trip",
     },
     {
       image: image16,
-      title: "Switzerland",
+      title: "Lucerne, Switzerland",
       subTitle: "Switzerland, renowned for its majestic Alps, pristine lakes, and charming villages.",
       cost: "5,400",
       duration: "Approx 2 night 2 day trip",
@@ -102,6 +105,89 @@ export default function DestinationService() {
       cost: "8,800",
       duration: "Approx 2 night trip",
     },
+
+    {
+      image: image33,
+      title: "Moscow, Russia",
+      subTitle: "Moscow is the capital and largest city of Russia, known for its iconic Red Square and the Kremlin.",
+      cost: "9,500",
+      duration: "Approx 3 night trip",
+    },
+
+    {
+      image: image34,
+      title: "Sydney, Australia",
+      subTitle: "Sydney is a vibrant city with famous landmarks like the Sydney Opera House and the Sydney Harbour Bridge.",
+      cost: "9,200",
+      duration: "Approx 4 night trip",
+    },
+
+    {
+      image: image35,
+      title: "Bali, Indonesia",
+      subTitle: "Bali is a tropical paradise known for its lush landscapes, beautiful beaches, and rich cultural heritage.",
+      cost: "7,000",
+      duration: "Approx 5 night trip",
+    },
+
+    {
+      image: image8,
+      title: "Saint Petersburg, Russia",
+      subTitle: "Saint Isaac's Cathedral, located in the heart of Saint Petersburg, Russia.",
+      cost: "4,200",
+      duration: "Approx 2 night trip",
+    },
+
+    {
+      image: image36,
+      title: "Budapest, Hungary",
+      subTitle: "Budapest is often called the 'Paris of the East' and boasts stunning architecture and relaxing thermal baths.",
+      cost: "6,800",
+      duration: "Approx 3 night trip",
+    },
+
+    {
+      image: image37,
+      title: "Tokyo, Japan",
+      subTitle: "Tokyo is a bustling metropolis that seamlessly blends modern technology with traditional culture.",
+      cost: "10,300",
+      duration: "Approx 5 night trip",
+    },
+
+    {
+      image: image38,
+      title: "Cairo, Egypt",
+      subTitle: "Cairo is home to the iconic Pyramids of Giza and the Sphinx, showcasing Egypt's ancient history.",
+      cost: "8,000",
+      duration: "Approx 4 night trip",
+    },
+
+    {
+      image: image39,
+      title: "Amsterdam, Netherlands",
+      subTitle: "Amsterdam is famous for its picturesque canals, historic architecture, and vibrant cultural scene.",
+      cost: "9,200",
+      duration: "Approx 3 night trip",
+    },
+
+
+    {
+      image: image40,
+      title: "Auckland, New Zealand",
+      subTitle: "Auckland is a city surrounded by water, offering beautiful harbors, diverse landscapes, and a thriving cultural scene.",
+      cost: "11,400",
+      duration: "Approx 4 night trip",
+    },
+    
+
+    {
+      image: image41,
+      title: "Prague, Czech Republic",
+      subTitle: "Prague boasts stunning architecture, including the Prague Castle, and a charming Old Town with cobblestone streets.",
+      cost: "7,600",
+      duration: "Approx 3 night trip",
+    },
+
   ];
 
   const packages = [

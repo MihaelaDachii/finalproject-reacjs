@@ -273,6 +273,36 @@ rovinj: {
           }
         ]
       },
+
+
+      auckland: {
+        attractions: [
+          {
+            name: "Sky Tower",
+            description: "Iconic observation and telecommunications tower offering panoramic views of Auckland's skyline.",
+            address: "Victoria Street West, Auckland, New Zealand",
+            image_url: "https://images.unsplash.com/photo-1577581739644-d302d8ca8392?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
+            thumbnail_urls: ["https://images.unsplash.com/photo-1577581739644-d302d8ca8392?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80"],
+            visiting_hours: "9:00 AM - 10:00 PM, Monday - Sunday"
+          }
+        ]
+      },
+      
+
+      prague: {
+        attractions: [
+          {
+            name: "Prague Castle",
+            description: "Historic castle complex with palaces, churches, and stunning views over Prague.",
+            address: "Hradčany, Prague, Czech Republic",
+            image_url: "https://images.unsplash.com/photo-1580852710598-96912fc48065?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80",
+            thumbnail_urls: ["https://images.unsplash.com/photo-1580852710598-96912fc48065?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80"],
+            visiting_hours: "9:00 AM - 5:00 PM, Monday - Sunday"
+          }
+        ]
+      },
+      
+
       amsterdam: {
         attractions: [
           {
