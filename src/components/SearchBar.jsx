@@ -130,13 +130,13 @@ const SearchForm = styled.form`
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0 0.5rem 0.5rem 0;
-    background-color: #4361ee;
+    background-color: #01959a;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: #023e8a;
+      background-color: rgb(3, 64, 66);
     }
   }
 `;

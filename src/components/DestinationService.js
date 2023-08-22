@@ -275,6 +275,7 @@ const Section = styled.section`
   padding: 1rem;
   width: 320px;
   margin: 0 auto;
+  line-height: 1.7;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;

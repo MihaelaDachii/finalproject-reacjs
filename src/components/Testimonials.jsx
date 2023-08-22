@@ -13,8 +13,7 @@ export default function Testimonials() {
       <div className="testimonials">
         <div className="testimonial">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            asperiores eaque.
+          Experiența cu agenția de turism a fost uimitoare! Itinerariul bine structurat și atenția la detalii au făcut călătoria noastră memorabilă. Recoman din suflet.
           </p>
           <div className="info">
             <img src={avatarImage} alt="" />
@@ -26,8 +25,7 @@ export default function Testimonials() {
         </div>
         <div className="testimonial">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            asperiores eaque.
+          Recomand cu căldură această agenție de turism. Echipa lor a făcut tot posibilul să se asigure că fiecare aspect al călătoriei noastre a fost perfect organizat.
           </p>
           <div className="info">
             <img src={avatarImage2} alt="" />
@@ -39,8 +37,7 @@ export default function Testimonials() {
         </div>
         <div className="testimonial">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            asperiores eaque.
+          Serviciile de înaltă calitate, m-au impresionat. Ghidurile bine pregătite și selecția de destinații au făcut din vacanța mea o experiență de neuitat
           </p>
           <div className="info">
             <img src={avatarImage3} alt="" />
@@ -72,6 +69,7 @@ const Section = styled.section`
       border-radius: 0.5rem;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       transition: 0.3s ease-in-out;
+      line-height: 1.7;
       &:hover {
         transform: translateX(0.4rem) translateY(-1rem);
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -82,6 +80,8 @@ const Section = styled.section`
         gap: 1rem;
         align-items: center;
         margin-top: 1rem;
+        line-height: 1.7;
+
         img {
           border-radius: 4.2rem;
           height: 10rem;

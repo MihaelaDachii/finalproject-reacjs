@@ -13,7 +13,7 @@ function Trip() {
         <TripData
         image={Trip1}
         heading = "Trip in Switzerland"
-        text="Switzerland, renowned for its majestic Alps, pristine lakes, and charming villages, is a picturesque haven in the heart of Europe. Famous for its precision and watchmaking, this multicultural country boasts a high standard of living and a well-preserved natural environment. From the cosmopolitan cities of Zurich and Geneva to the idyllic landscapes of the Swiss countryside."
+        text="Switzerland, renowned for its majestic Alps, pristine lakes, and charming villages, is a picturesque haven in the heart of Europe. Famous for its precision and watchmaking, this multicultural country boasts a high standard of living and a well-preserved natural environment. From the begining cosmopolitan cities of Zurich and Geneva to the idyllic landscapes of the Swiss countryside."
         />
 
         <TripData
