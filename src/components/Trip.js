@@ -8,7 +8,7 @@ function Trip() {
   return (
     <div className="trip">
       <h1>Recent Trips</h1>
-      <p>Explore distinctive destinations using Google Maps</p>
+      <p>Explore distinctive destinations</p>
       <div className="tripcard">
         <TripData
         image={Trip1}

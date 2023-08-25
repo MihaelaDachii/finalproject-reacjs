@@ -34,8 +34,8 @@ const Footer = () => {
 
         <div>
           <h4>Community</h4>
-          <a href="/">GitHub</a>
-          <a href="/">Project</a>
+          <a href="/">Facebook</a>
+          <a href="/">Instagram</a>
           <a href="/">Twitter</a>
         </div>
 
